@@ -1,0 +1,7 @@
+#Sat Oct 10 10:18:35 GMT+08:00 2026
+base.0=C\:\\Users\\guqig\\Documents\\Codex\\2026-10-09\\new-chat\\mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\0\\classes.dex
+base.1=C\:\\Users\\guqig\\Documents\\Codex\\2026-10-09\\new-chat\\mobile\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\11\\classes.dex
+path.0=0/classes.dex
+path.1=11/classes.dex
+renamed.0=classes.dex
+renamed.1=classes2.dex

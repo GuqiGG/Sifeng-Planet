@@ -1,0 +1,1 @@
+com.sifeng.planet:drawable/ic_launcher = 0x7f010000

@@ -1,0 +1,51 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.sifeng.planet"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="26"
+9        android:targetSdkVersion="34" />
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:2:5-67
+11-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:2:22-64
+12    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+12-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:3:5-78
+12-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:3:22-75
+13
+14    <application
+14-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:4:5-8:19
+15        android:debuggable="true"
+16        android:extractNativeLibs="false"
+17        android:icon="@drawable/ic_launcher"
+17-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:4:39-75
+18        android:label="司凤星球"
+18-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:4:18-38
+19        android:theme="@android:style/Theme.Material.Light.NoActionBar"
+19-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:4:113-176
+20        android:usesCleartextTraffic="false" >
+20-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:4:76-112
+21        <activity
+21-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:5:9-7:20
+22            android:name="com.sifeng.planet.MainActivity"
+22-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:5:19-47
+23            android:configChanges="keyboardHidden|orientation|screenSize"
+23-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:5:72-133
+24            android:exported="true" >
+24-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:5:48-71
+25            <intent-filter>
+25-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:6:13-156
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:6:28-80
+26-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:6:36-77
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:6:80-140
+28-->C:\Users\guqig\Documents\Codex\2026-10-09\new-chat\mobile\app\src\main\AndroidManifest.xml:6:90-137
+29            </intent-filter>
+30        </activity>
+31    </application>
+32
+33</manifest>
