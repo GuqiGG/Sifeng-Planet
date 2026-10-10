@@ -1,0 +1,11 @@
+{
+  "search_terms": [
+    "司凤",
+    "测试歌曲"
+  ],
+  "playback_mode": "random",
+  "close_behavior": "quit",
+  "next_hotkey": "Ctrl+Alt+M",
+  "floating": true,
+  "onboarding_complete": true
+}
