@@ -1,0 +1,17 @@
+--- PREVIOUS_VERSION.java
++++ mobile/app/src/main/java/com/sifeng/planet/MainActivity.java
+@@ -257,10 +257,10 @@
+     void play(JSONObject song){hideCapsule();int token=++mediaToken;current=song;index=-1;for(int i=0;i<songs.size();i++)if(songs.get(i).optString("bvid").equals(song.optString("bvid")))index=i;show("player");
+         history.removeIf(x->x.optString("bvid").equals(song.optString("bvid")));history.add(0,song);while(history.size()>100)history.remove(history.size()-1);save("history",history);
+         if(player!=null){player.release();player=null;}new Thread(()->{
+-            try{String bvid=song.optString("bvid");long aid=song.optLong("aid");int cid;
+-                try{JSONArray pages=api("https://api.bilibili.com/x/player/pagelist?bvid="+encoded(bvid),"视频信息").getJSONArray("data");cid=pages.getJSONObject(0).getInt("cid");}
+-                catch(Exception first){if(aid>0){JSONArray pages=api("https://api.bilibili.com/x/player/pagelist?aid="+aid,"视频信息").getJSONArray("data");cid=pages.getJSONObject(0).getInt("cid");}
+-                    else cid=api("https://api.bilibili.com/x/web-interface/view?bvid="+encoded(bvid),"视频信息").getJSONObject("data").getInt("cid");}
++            try{String bvid=song.optString("bvid");long aid=song.optLong("aid"),cid;
++                try{JSONArray pages=api("https://api.bilibili.com/x/player/pagelist?bvid="+encoded(bvid),"视频信息").getJSONArray("data");cid=pages.getJSONObject(0).getLong("cid");}
++                catch(Exception first){if(aid>0){JSONArray pages=api("https://api.bilibili.com/x/player/pagelist?aid="+aid,"视频信息").getJSONArray("data");cid=pages.getJSONObject(0).getLong("cid");}
++                    else cid=api("https://api.bilibili.com/x/web-interface/view?bvid="+encoded(bvid),"视频信息").getJSONObject("data").getLong("cid");}
+                 String base="https://api.bilibili.com/x/player/playurl?cid="+cid+"&qn=16&fnval=0";
+                 String[] urlsToTry=aid>0?new String[]{base+"&bvid="+encoded(bvid),base+"&avid="+aid,base+"&bvid="+encoded(bvid)+"&platform=html5",base+"&avid="+aid+"&platform=html5"}:new String[]{base+"&bvid="+encoded(bvid),base+"&bvid="+encoded(bvid)+"&platform=html5"};
+                 JSONArray urls=null;Exception last=null;
